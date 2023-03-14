@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+span[class='tech'] {
+	text-decoration: underline;
+}
+
+/**** CLASS SELECTORS ****/
+.container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.top {
+	background-color: #abd1c6;
+}
+
+.middle {
+	background-color: #004643;
+}
+
+.bottom {
+	background-color: #e16162;
+}
+
+.background-img {
+	width: 500px;
+}
