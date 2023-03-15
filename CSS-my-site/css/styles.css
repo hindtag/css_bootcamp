@@ -8,6 +8,8 @@ body {
 	text-align: center;
 	font-family: 'Public Sans', sans-serif;
 	font-weight: 600;
+	line-height: 1;
+	color: #222525;
 }
 
 body::-webkit-scrollbar {
@@ -18,6 +20,17 @@ h1 {
 	margin: 0 auto;
 	font-family: 'Averia Serif Libre', Helvetica Neue, Helvetica, Arial,
 		sans-serif;
+	font-size: 4rem;
+	color: #232323;
+}
+
+h2 {
+	margin-top: 5px;
+	font-size: 2rem;
+}
+h3 {
+	margin-top: 5px;
+	font-size: 1.5rem;
 }
 
 span[class='tech'] {
@@ -27,14 +40,12 @@ span[class='tech'] {
 }
 
 a {
-	color: #2daf94;
+	color: #004643;
+	text-decoration: none;
 }
 
-a:hover {
-	color: #b22727;
-}
 a:visited {
-	color: #f9bc60;
+	color: #0d4c92;
 }
 
 /**** CLASS SELECTORS ****/
@@ -42,6 +53,43 @@ a:visited {
 	width: 100vw;
 	position: relative;
 	padding-top: 100px;
+}
+
+.container.top {
+	line-height: 2;
+}
+.container.middle {
+	line-height: 1.5;
+}
+
+.container.top p {
+	font-size: 1.5rem;
+	font-weight: normal;
+}
+
+.background-img {
+	width: 25%;
+}
+
+.top-cloud {
+	width: 110px;
+	position: absolute;
+	top: -2px;
+	right: 350px;
+}
+
+.bottom-cloud {
+	width: 90px;
+	position: absolute;
+}
+
+.professional-picture {
+	width: 13%;
+}
+
+.professional-skill,
+.professional-traveller {
+	width: 25%;
 }
 
 .top {
@@ -64,14 +112,6 @@ a:visited {
 		radial-gradient(#2daf94 0.5px, #e5e5f7 0.5px);
 	background-size: 20px 20px;
 	background-position: 0 0, 10px 10px;
-	height: 100vh;
-}
-
-.middle h1,
-h2,
-h3 {
-	color: #222525;
-	margin-top: 5px;
 }
 
 .bottom {
@@ -85,21 +125,14 @@ h3 {
 		#e5e5f7 1px,
 		#e5e5f7
 	);
-	height: 25vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: center;
-	align-content: flex-start;
-	padding-bottom: 25px;
-	margin: 0 auto;
 }
 
-.bottom .socmed {
+.socmed {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 }
 
 .bottom a {
@@ -113,25 +146,54 @@ h3 {
 	margin-top: 5px;
 }
 
-.background-img {
-	width: 400px;
+.btn {
+	display: flex;
+	background-color: #f9bc60;
+	color: #0f3433;
+	margin: 10px auto auto auto;
+	border: 2px solid;
+	text-transform: uppercase;
+	width: 200px;
+	height: 45px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
 }
 
-.top-cloud {
-	width: 110px;
-	position: absolute;
-	top: -2px;
-	right: 350px;
+.btn:hover {
+	color: #e8e4e6;
+	background-color: #b22727;
+	cursor: pointer;
 }
 
-.bottom-cloud {
-	width: 90px;
-	position: absolute;
+.copyright {
+	padding: 0 0 25px 0;
+}
+
+.contact-me {
+	display: flex;
+	flex-direction: column;
+}
+
+.skill-row {
+	width: 50%;
+	margin: 100px auto;
+	text-align: left;
+	line-height: 2;
 }
 
 @media only screen and (max-width: 600px) {
 	.background-img {
-		width: 250px;
-		height: 350px;
+		width: 50%;
+	}
+	.top-cloud {
+		width: 15%;
+	}
+	.bottom-cloud {
+		width: 15%;
+	}
+	.professional-skill,
+	.professional-traveller {
+		width: 100%;
 	}
 }
