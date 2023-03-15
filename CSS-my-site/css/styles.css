@@ -48,6 +48,74 @@ a:visited {
 	color: #0d4c92;
 }
 
+/*** Images ***/
+.background-img {
+	width: 25%;
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.top-cloud {
+	width: 110px;
+	position: absolute;
+	top: -2px;
+	right: 350px;
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.bottom-cloud {
+	width: 90px;
+	position: absolute;
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.professional-picture {
+	width: 13%;
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.professional-skill {
+	width: 35%;
+	float: left;
+	margin-right: 30px;
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.professional-traveller {
+	width: 35%;
+	float: right;
+	margin-left: 30px;
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
 /**** CLASS SELECTORS ****/
 .container {
 	width: 100vw;
@@ -65,31 +133,6 @@ a:visited {
 .container.top p {
 	font-size: 1.5rem;
 	font-weight: normal;
-}
-
-.background-img {
-	width: 25%;
-}
-
-.top-cloud {
-	width: 110px;
-	position: absolute;
-	top: -2px;
-	right: 350px;
-}
-
-.bottom-cloud {
-	width: 90px;
-	position: absolute;
-}
-
-.professional-picture {
-	width: 13%;
-}
-
-.professional-skill,
-.professional-traveller {
-	width: 25%;
 }
 
 .top {
@@ -184,7 +227,7 @@ a:visited {
 
 @media only screen and (max-width: 600px) {
 	.background-img {
-		width: 50%;
+		width: 80%;
 	}
 	.top-cloud {
 		width: 15%;
@@ -195,5 +238,22 @@ a:visited {
 	.professional-skill,
 	.professional-traveller {
 		width: 100%;
+	}
+	.professional-picture {
+		width: 55%;
+	}
+	.skill-row {
+		width: 75%;
+		margin: 5% auto;
+		text-align: left;
+		line-height: 2;
+	}
+	.contact-me {
+		width: 75%;
+		margin: 0 auto;
+	}
+	.container .top {
+		width: 70%;
+		margin: 0 auto;
 	}
 }
