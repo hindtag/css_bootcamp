@@ -16,6 +16,14 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
+hr {
+	width: 4%;
+	border-style: dotted none none;
+	border-width: 7.5px;
+	border-color: #078080;
+	margin: 25px auto;
+}
+
 h1 {
 	margin: 0 auto;
 	font-family: 'Averia Serif Libre', Helvetica Neue, Helvetica, Arial,
@@ -191,7 +199,7 @@ a:visited {
 
 .btn {
 	display: flex;
-	background-color: #f9bc60;
+	background-color: #ffd803;
 	color: #0f3433;
 	margin: 10px auto auto auto;
 	border: 2px solid;
