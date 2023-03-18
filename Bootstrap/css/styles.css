@@ -8,7 +8,7 @@ body {
 }
 
 .container-fluid {
-	padding: 3% 15%;
+	padding: 3% 15% 7%;
 }
 
 h1 {
@@ -63,14 +63,19 @@ p {
 
 /* Title Image */
 .iphone {
+	width: 20%;
+	height: 80%;
 	transform: rotate(25deg);
-	width: 60%;
+	position: absolute;
+	right: 25%;
 }
 
 /* Features sections */
 
 #features {
 	padding: 7% 15%;
+	background-color: #fff;
+	position: relative;
 }
 
 .feature-box {
@@ -93,6 +98,7 @@ p {
 	text-align: center;
 	background-color: #ef8172;
 	color: whitesmoke;
+	position: relative;
 }
 
 .testimonial-img {
@@ -110,9 +116,23 @@ p {
 	background-color: #ef8172;
 	text-align: center;
 	padding-bottom: 3%;
+	position: relative;
 }
 
 #press img {
 	width: 15%;
 	margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+	padding: 100px;
+	text-align: center;
+	position: relative;
+	background-color: #fff;
+}
+
+.pricing-column {
+	padding: 3% 2%;
 }
